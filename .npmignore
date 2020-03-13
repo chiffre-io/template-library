@@ -1,0 +1,7 @@
+**/*.test.ts
+tsconfig.json
+.env
+.volumes/
+yarn-error.log
+.github/**
+src/**
