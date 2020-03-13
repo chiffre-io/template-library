@@ -1,3 +1,5 @@
+import hello from './index'
+
 test('testing works', () => {
-  expect(1 + 1).toEqual(2)
+  expect(hello('World')).toEqual('Hello, World !')
 })
