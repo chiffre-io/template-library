@@ -1,0 +1,16 @@
+version: 1
+update_configs:
+  # Dependencies
+  - package_manager: "javascript"
+    directory: "/"
+    update_schedule: "weekly"
+    default_assignees:
+      - "franky47"
+  # GitHub Actions
+  - package_manager: "github_actions"
+    directory: "/"
+    update_schedule: "weekly"
+    default_reviewers:
+      - "franky47"
+    default_assignees:
+      - "franky47"
