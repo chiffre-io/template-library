@@ -5,6 +5,9 @@ on:
     branches:
       - next
       - feature/*
+      - dependabot/*
+  pull_request:
+    types: [opened, edited, reopened]
 
 jobs:
   ci:
