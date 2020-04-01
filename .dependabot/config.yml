@@ -13,6 +13,9 @@ update_configs:
       - match:
           dependency_type: production
           update_type: in_range
+      - match:
+          dependency_type: production
+          update_type: security:patch
   # GitHub Actions
   - package_manager: github_actions
     directory: /
