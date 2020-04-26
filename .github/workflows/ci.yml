@@ -14,6 +14,11 @@ jobs:
     name: Continuous Integration
     runs-on: ubuntu-latest
     steps:
+      - id: short-sha1
+        name: Get short Git SHA-1
+        run: echo "::set-output name=value::$(echo ${{ env.GITHUB_SHA }} | cut -c1-8)"
+      - run: echo ${{ steps.short-sha1.outputs.value }}
+        name: Print short SHA-1
       - id: yarn-cache
         name: Get Yarn cache path
         run: echo "::set-output name=dir::$(yarn cache dir)"
