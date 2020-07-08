@@ -32,7 +32,7 @@
   "devDependencies": {
     "@commitlint/config-conventional": "^9.0.1",
     "@types/jest": "^26.0.4",
-    "@types/node": "^14.0.19",
+    "@types/node": "^14.0.20",
     "commitlint": "^9.0.1",
     "husky": "^4.2.5",
     "jest": "^25.5.4",
